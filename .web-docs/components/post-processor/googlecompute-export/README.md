@@ -41,7 +41,7 @@ the [authentication](/packer/integrations/hashicorp/googlecompute#authentication
 
 - `scopes` ([]string) - The service account scopes for launched exporter post-processor instance.
   Defaults to:
-  
+
   ```json
   [
     "https://www.googleapis.com/auth/cloud-platform"
@@ -56,6 +56,8 @@ the [authentication](/packer/integrations/hashicorp/googlecompute#authentication
   `pd-ssd` or `pd-standard`. Defaults to `pd-ssd`.
 
 - `machine_type` (string) - The export instance machine type. Defaults to `"n1-highcpu-4"`.
+
+- `source_image_family` (string) - The export instance OS type. Defaults to `"debian-12-worker"`.
 
 - `network` (string) - The Google Compute network id or URL to use for the export instance.
   Defaults to `"default"`. If the value is not a URL, it
